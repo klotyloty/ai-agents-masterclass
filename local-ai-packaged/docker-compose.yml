@@ -15,12 +15,12 @@ x-n8n: &service-n8n
   environment:
     - DB_TYPE=postgresdb
     - DB_POSTGRESDB_HOST=postgres
-    - DB_POSTGRESDB_USER=${POSTGRES_USER}
-    - DB_POSTGRESDB_PASSWORD=${POSTGRES_PASSWORD}
+    - DB_POSTGRESDB_USER=root
+    - DB_POSTGRESDB_PASSWORD=klotyloty01!
     - N8N_DIAGNOSTICS_ENABLED=false
     - N8N_PERSONALIZATION_ENABLED=false
-    - N8N_ENCRYPTION_KEY
-    - N8N_USER_MANAGEMENT_JWT_SECRET
+    - N8N_ENCRYPTION_KEY=abcdefghijklmnop01!
+    - N8N_USER_MANAGEMENT_JWT_SECRET=qrstuvwxyz01!
   links:
     - postgres
 
